@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE403005-3754-401C-AA3F-57D6685F54FE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Calc</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7FD5BA4A-85A1-44FE-BB64-DD15021F468D</key>
+		<string>https://github.com/HolgerLiesegang/calc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Calc/Calc.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7FD5BA4A-85A1-44FE-BB64-DD15021F468D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HolgerLiesegang/calc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7FD5BA4A-85A1-44FE-BB64-DD15021F468D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7FD5BA4A-85A1-44FE-BB64-DD15021F468D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>calc</string>
+		</dict>
+	</array>
+</dict>
+</plist>
