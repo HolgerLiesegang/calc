@@ -9,7 +9,9 @@
 #import "LGViewController.h"
 
 @interface LGViewController ()
-
+@property (strong, nonatomic) IBOutlet UILabel *displayLabel;
+@property BOOL userIsCreatingNumber;
+@property (nonatomic, strong) LGCalcModel* calcModel;
 @end
 
 @implementation LGViewController
@@ -17,31 +19,43 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.calcModel = [LGCalcModel new];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)numberButtonTouchUpInside:(UIButton *)sender {
+    if (!self.userIsCreatingNumber) {
+        self.userIsCreatingNumber = YES;
+        self.displayLabel.text = @"";
+    }
+    self.displayLabel.text = [self.displayLabel.text stringByAppendingString:sender.titleLabel.text];
 }
 
-- (IBAction)decimalPointTouchUpInside:(UIButton *)sender {
+- (IBAction)decimalPointButtonTouchUpInside:(UIButton *)sender {
+    NSRange range = [self.displayLabel.text rangeOfString:@"."];
+    if (range.location == NSNotFound) {
+        self.displayLabel.text = [self.displayLabel.text stringByAppendingString:@"."];
+        self.userIsCreatingNumber = YES;
+    }
+
 }
 
-- (IBAction)equalSignTouchUpInside:(UIButton *)sender {
+- (IBAction)SolutionButtonTouchUpInside:(UIButton *)sender {
+
 }
 
-- (IBAction)operationTouchUpInside:(UIButton *)sender {
+- (IBAction)operationButtonTouchUpInside:(UIButton *)sender {
+
 }
 
-- (IBAction)allClearTouchUpInside:(UIButton *)sender {
+- (IBAction)allClearButtonTouchUpInside:(UIButton *)sender {
+    self.displayLabel.text = @"";
+    self.calcModel.opererand = 0.0;
+    self.userIsCreatingNumber = NO;
 }
 
-- (IBAction)signTouchUpInside:(UIButton *)sender {
+- (IBAction)signButtonTouchUpInside:(UIButton *)sender {
+
 }
 
 

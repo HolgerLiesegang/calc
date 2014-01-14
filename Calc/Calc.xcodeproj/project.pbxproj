@@ -21,6 +21,7 @@
 		8B6560611884880F0020CA29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6560431884880F0020CA29 /* UIKit.framework */; };
 		8B6560691884880F0020CA29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B6560671884880F0020CA29 /* InfoPlist.strings */; };
 		8B65606B1884880F0020CA29 /* CalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B65606A1884880F0020CA29 /* CalcTests.m */; };
+		8B65607618854A480020CA29 /* LGCalcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B65607518854A480020CA29 /* LGCalcModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8B6560661884880F0020CA29 /* CalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalcTests-Info.plist"; sourceTree = "<group>"; };
 		8B6560681884880F0020CA29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B65606A1884880F0020CA29 /* CalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcTests.m; sourceTree = "<group>"; };
+		8B65607418854A480020CA29 /* LGCalcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCalcModel.h; sourceTree = "<group>"; };
+		8B65607518854A480020CA29 /* LGCalcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCalcModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				8B6560511884880F0020CA29 /* Main.storyboard */,
 				8B6560541884880F0020CA29 /* LGViewController.h */,
 				8B6560551884880F0020CA29 /* LGViewController.m */,
+				8B65607418854A480020CA29 /* LGCalcModel.h */,
+				8B65607518854A480020CA29 /* LGCalcModel.m */,
 				8B6560571884880F0020CA29 /* Images.xcassets */,
 				8B6560461884880F0020CA29 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				8B65604C1884880F0020CA29 /* main.m in Sources */,
 				8B6560501884880F0020CA29 /* LGAppDelegate.m in Sources */,
 				8B6560561884880F0020CA29 /* LGViewController.m in Sources */,
+				8B65607618854A480020CA29 /* LGCalcModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

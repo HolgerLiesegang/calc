@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123456789" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKB-6j-Hyu">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="OKB-6j-Hyu">
                                 <rect key="frame" x="20" y="40" width="280" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="47"/>
@@ -33,7 +33,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="allClearTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wzb-qo-nE4"/>
+                                    <action selector="allClearButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eZ3-Ee-l44"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4Y-3K-771">
@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="signTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ehq-m1-MPK"/>
+                                    <action selector="signButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NoD-Xp-lzX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3d-kt-9wE">
@@ -59,7 +59,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mAN-58-oCC"/>
+                                    <action selector="operationButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hRt-H3-2ar"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hde-Md-ztf">
@@ -72,7 +72,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uvH-4C-J2r"/>
+                                    <action selector="operationButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZBA-xI-dib"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4b-cV-0hk">
@@ -124,7 +124,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vc1-zt-lC2"/>
+                                    <action selector="operationButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QQk-QE-AVg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbO-ZN-7yR">
@@ -176,7 +176,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1eS-yg-ry9"/>
+                                    <action selector="operationButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Npr-5c-BCz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-Ne-6KK">
@@ -241,7 +241,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="decimalPointTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kRW-hJ-S6j"/>
+                                    <action selector="decimalPointButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T8n-G6-Jmx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bx-pg-yKh">
@@ -254,12 +254,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalSignTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8HX-Oh-TKc"/>
+                                    <action selector="SolutionButtonTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ivn-VB-6fC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="OKB-6j-Hyu" id="Cwo-EC-nGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
