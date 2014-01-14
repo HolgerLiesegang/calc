@@ -1,4 +1,4 @@
 calc
 ====
 
-Treehouse Forum Contest: Calculator App for iOS
+Treehouse Contest: Calculator App for iOS
