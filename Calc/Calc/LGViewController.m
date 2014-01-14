@@ -41,16 +41,28 @@
 }
 
 - (IBAction)SolutionButtonTouchUpInside:(UIButton *)sender {
-
 }
 
 - (IBAction)operationButtonTouchUpInside:(UIButton *)sender {
 
+    NSString *operation = sender.titleLabel.text;
+
+    if (self.calcModel.stack_double == 0.0) {
+        self.calcModel.stack_double = [self.displayLabel.text doubleValue];
+        self.calcModel.operator = operation;
+        self.displayLabel.text = @"0";
+    } else {
+        double result = [self.calcModel performOperation:operation withDouble:[self.displayLabel.text doubleValue]];
+        self.displayLabel.text = [NSString stringWithFormat:@"%g", result];
+    }
+
+    self.userIsCreatingNumber = NO;
 }
 
 - (IBAction)allClearButtonTouchUpInside:(UIButton *)sender {
-    self.displayLabel.text = @"";
-    self.calcModel.opererand = 0.0;
+    self.displayLabel.text = @"0";
+    self.calcModel.stack_double = 0.0;
+    self.calcModel.operator = @"";
     self.userIsCreatingNumber = NO;
 }
 
