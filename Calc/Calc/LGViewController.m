@@ -26,4 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)numberButtonTouchUpInside:(UIButton *)sender {
+}
+
+- (IBAction)decimalPointTouchUpInside:(UIButton *)sender {
+}
+
+- (IBAction)equalSignTouchUpInside:(UIButton *)sender {
+}
+
+- (IBAction)operationTouchUpInside:(UIButton *)sender {
+}
+
+- (IBAction)allClearTouchUpInside:(UIButton *)sender {
+}
+
+- (IBAction)signTouchUpInside:(UIButton *)sender {
+}
+
+
 @end
