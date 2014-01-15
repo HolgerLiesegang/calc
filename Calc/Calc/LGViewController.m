@@ -109,4 +109,9 @@
     self.lockOperatorButtons = NO;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 @end

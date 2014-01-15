@@ -18,7 +18,6 @@
         self.stackDouble = 0.0;
         self.stackOperator = @"";
     }
-
     return self;
 }
 
