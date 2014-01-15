@@ -15,27 +15,27 @@
 {
     self = [super init];
     if (self) {
-        self.stack_double = 0.0;
-        self.operator = @"";
+        self.stackDouble = 0.0;
+        self.stackOperator = @"";
     }
 
     return self;
 }
 
+- (double) performOperationWithNumber: (double) number_double {
+    double result = 0.0;
 
-
-- (double) performOperation: (NSString*) pressedOperator withDouble: (double) number_double {
-    if ([self.operator isEqualToString:@"+"]) {
-        self.stack_double = self.stack_double + number_double;
-    } else if ([self.operator isEqualToString:@"-"]) {
-        self.stack_double = self.stack_double - number_double;
-    } else if ([self.operator isEqualToString:@"*"]) {
-        self.stack_double = self.stack_double * number_double;
-    } else if ([self.operator isEqualToString:@"/"]) {
-        self.stack_double = self.stack_double / number_double;
+    if ([self.stackOperator isEqualToString:@"+"]) {
+        result = self.stackDouble + number_double;
+    } else if ([self.stackOperator isEqualToString:@"-"]) {
+        result = self.stackDouble - number_double;
+    } else if ([self.stackOperator isEqualToString:@"*"]) {
+        result = self.stackDouble * number_double;
+    } else if ([self.stackOperator isEqualToString:@"/"]) {
+        result = self.stackDouble / number_double;
     }
-    self.operator = pressedOperator;
-    return self.stack_double;
+    self.stackDouble = result;
+    return result;
 };
 
 @end

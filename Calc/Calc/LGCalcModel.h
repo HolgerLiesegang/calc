@@ -10,10 +10,10 @@
 
 @interface LGCalcModel : NSObject
 
-@property double stack_double;
-@property (nonatomic, strong) NSString* operator;
+@property double stackDouble;
+@property (nonatomic, strong) NSString* stackOperator;
 
 
-- (double) performOperation: (NSString*) pressedOperator withDouble: (double) number_double;
+- (double) performOperationWithNumber: (double) number_double;
 
 @end
