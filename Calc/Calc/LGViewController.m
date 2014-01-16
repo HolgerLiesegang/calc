@@ -98,7 +98,6 @@
         new = -1 * a;
     }
     self.displayLabel.text = [NSString stringWithFormat:@"%g", new];
-    self.calcModel.stackDouble = 0.0;
     self.lockOperatorButtons = NO;
 }
 
