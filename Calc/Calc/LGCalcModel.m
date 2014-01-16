@@ -21,6 +21,7 @@
     return self;
 }
 
+
 - (double) performOperationWithNumber: (double) number_double {
     double result = 0.0;
 

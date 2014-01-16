@@ -7,6 +7,7 @@
 //
 
 #import "LGViewController.h"
+#import "LGCalcModel.h"
 
 @interface LGViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *displayLabel;
@@ -22,6 +23,8 @@
     [super viewDidLoad];
     self.calcModel = [LGCalcModel new];
 }
+
+#pragma mark -----------------------------------
 
 #pragma mark Button "." pressed
 - (IBAction)decimalPointButtonTouchUpInside:(UIButton *)sender
@@ -84,7 +87,7 @@
     self.lockOperatorButtons = NO;
 }
 
-#pragma mark Buttons "+/-" pressed
+#pragma mark Button "+/-" pressed
 - (IBAction)signButtonTouchUpInside:(UIButton *)sender
 {
     double a = [self.displayLabel.text doubleValue];
@@ -99,7 +102,7 @@
     self.lockOperatorButtons = NO;
 }
 
-#pragma mark Buttons "AC" pressed
+#pragma mark Button "AC" pressed
 - (IBAction)allClearButtonTouchUpInside:(UIButton *)sender
 {
     self.displayLabel.text = @"0";
@@ -109,8 +112,11 @@
     self.lockOperatorButtons = NO;
 }
 
+#pragma mark -----------------------------------
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
+    // A light status bar, intended for use on dark backgrounds
     return UIStatusBarStyleLightContent;
 }
 

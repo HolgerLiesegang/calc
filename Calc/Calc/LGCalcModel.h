@@ -10,7 +10,10 @@
 
 @interface LGCalcModel : NSObject
 
+// Contains the last operator
 @property double stackDouble;
+
+// Contains the last operation (+,-,*,/)
 @property (nonatomic, strong) NSString* stackOperator;
 
 
